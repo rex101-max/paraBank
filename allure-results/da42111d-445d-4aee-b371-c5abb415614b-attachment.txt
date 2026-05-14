@@ -1,0 +1,161 @@
+[INFO] Starting 20 concurrent GET /accounts requests
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+[ERROR] Concurrent[1/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[2/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[3/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[4/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[5/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[6/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[7/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[8/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[9/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[10/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[11/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[12/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[13/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[14/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[15/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[16/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[17/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[18/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[19/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+
+[ERROR] Concurrent[20/20] ✗ apiRequestContext.get: unable to get local issuer certificate
+Call log:
+  - → GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36
+    - accept: application/json
+    - accept-encoding: gzip,deflate,br
+

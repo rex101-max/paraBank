@@ -1,0 +1,1 @@
+[INFO] API REQUEST: GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
