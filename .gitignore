@@ -1,0 +1,10 @@
+node_modules/
+dist/
+test-results/
+reports/
+logs/
+playwright-report/
+allure-report/
+*.zip
+.env
+.DS_Store

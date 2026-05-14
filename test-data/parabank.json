@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "john",
+      "password": "demo",
+      "customerId": "12212",
+      "description": "Default demo user"
+    }
+  ],
+  "transferScenarios": [
+    {
+      "id": "TS-TRANSFER-01",
+      "amount": "100",
+      "description": "Standard transfer $100"
+    },
+    {
+      "id": "TS-TRANSFER-02",
+      "amount": "1",
+      "description": "Minimum transfer $1"
+    },
+    {
+      "id": "TS-TRANSFER-03",
+      "amount": "0",
+      "description": "Invalid transfer $0 — negative scenario"
+    }
+  ],
+  "accountTypes": ["CHECKING", "SAVINGS"]
+}

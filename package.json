@@ -1,0 +1,38 @@
+{
+  "name": "parabank-capstone",
+  "version": "1.0.0",
+  "description": "ParaBank Automated Independent Validation System — Playwright + TypeScript Capstone",
+  "author": "QA Automation Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test":               "npx playwright test",
+    "test:smoke":         "npx playwright test --grep @smoke",
+    "test:regression":    "npx playwright test --grep @regression",
+    "test:api":           "npx playwright test --grep @api --project=api",
+    "test:e2e":           "npx playwright test --grep @e2e",
+    "test:ui":            "npx playwright test tests/ui",
+    "test:perf":          "npx playwright test tests/performance",
+    "test:chrome":        "npx playwright test --project=chromium",
+    "test:firefox":       "npx playwright test --project=firefox",
+    "test:headed":        "npx playwright test --headed",
+    "test:debug":         "npx playwright test --debug",
+    "report":             "npx playwright show-report reports/html-report",
+    "report:allure":      "allure serve reports/allure-results",
+    "report:allure:gen":  "allure generate reports/allure-results --clean -o reports/allure-html",
+    "report:failures":    "npx ts-node utils/failureAnalysis.ts",
+    "pw:install":         "npx playwright install --with-deps",
+    "pw:install:chromium":"npx playwright install chromium --with-deps",
+    "lint":               "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test":   "^1.44.0",
+    "allure-playwright":  "^3.0.0",
+    "typescript":         "^5.4.5",
+    "ts-node":            "^10.9.2",
+    "@types/node":        "^20.12.0"
+  },
+  "dependencies": {}
+}

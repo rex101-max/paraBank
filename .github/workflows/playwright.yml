@@ -1,0 +1,94 @@
+name: ParaBank Playwright Capstone CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Nightly regression run at 02:00 UTC
+    - cron: '0 2 * * *'
+
+env:
+  PARABANK_USER: ${{ secrets.PARABANK_USER }}
+  PARABANK_PASS: ${{ secrets.PARABANK_PASS }}
+  PARABANK_CID:  ${{ secrets.PARABANK_CID }}
+
+jobs:
+  test:
+    name: Playwright Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium firefox
+
+      # CI fix: allure CLI must be installed before generate/serve commands
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline
+
+      - name: Run smoke tests (fast feedback)
+        run: npx playwright test --grep "@smoke" --reporter=list
+
+      # CI fix: removed continue-on-error so a failed suite correctly marks
+      # the pipeline as failed in GitHub's status checks.
+      - name: Run full test suite
+        run: npx playwright test --reporter=list,html,allure-playwright
+
+      - name: Generate Allure HTML report
+        if: always()
+        run: npx allure generate reports/allure-results --clean -o reports/allure-html
+        continue-on-error: true
+
+      - name: Upload Playwright HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-html-report
+          path: reports/html-report/
+          retention-days: 30
+
+      - name: Upload Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: reports/allure-html/
+          retention-days: 30
+
+      - name: Upload screenshots on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: test-results/
+          retention-days: 7
+
+      - name: Upload videos on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos
+          path: test-results/**/*.webm
+          retention-days: 7
+
+      - name: Upload Playwright traces on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: traces
+          path: test-results/**/*.zip
+          retention-days: 7
